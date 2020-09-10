@@ -1,0 +1,12 @@
+imagesAtDirectory=`ls /Users/yanesarmento/Desktop/images/*.png`
+echo "\n Um momento, por favor \n"
+
+> script/images.txt
+for image in $imagesAtDirectory
+do
+   
+   echo $image
+  
+   echo $image | cut -f 1 -d '.' >> script/images.txt
+done
+echo "\n Obrigada por aguardar! \n"
